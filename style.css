@@ -1,0 +1,189 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+    width: 1920px;
+}
+
+.one-screen {
+    background: url('img/main_bg.png') 0 0/cover no-repeat;
+    margin: 0 auto;
+}
+
+.one-screen-content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.one-screen-content--element {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.heading-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-strip {
+    width: 290px;
+    height: 2px;
+    background-color: #FFFFFF;
+    align-self: center;
+    margin: 0 10px;
+}
+
+.heading-orange-font {
+    font-size: 41px;
+    color: #F9BF3B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+.heading-white-font {
+  font-size: 60px;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  align-self: center;
+  text-transform: uppercase;
+}
+
+.logo {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.logo-text {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.one-screen-content-text {
+    color: #FFFFFF;
+    font-size: 21px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+.heading-sign-up {
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+    padding: 15px;
+    margin: 30px 0;
+    border: 0;
+}
+
+.heading-sign-up-text {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.one-screen-foot {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.one-screen-foot-text {
+    color: #FFFFFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.one-screen-content-text--yellow-element {
+    color: #F9BF3B;
+    font-weight: 800;
+}
+
