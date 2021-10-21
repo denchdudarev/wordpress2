@@ -241,7 +241,7 @@ body {
 }
 
 .three-screen {
-  background: url('img/woman_bg.png') 0 0/contain no-repeat;
+  background: url('img/woman_bg.png') 150px 0/contain no-repeat;
 }
 
 .three-screen-width {
@@ -250,6 +250,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding: 50px 0;
 }
 
 .three-screen-contant {
@@ -283,3 +284,50 @@ body {
   color: #5C4242;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.four-screen {
+  background: url('img/second_bg.png') 0 0/cover no-repeat;
+}
+
+.four-screen-contant {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.four-screen-contant--h3 {
+  color: #EFEFEF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.four-screen-contant--strip {
+  width: 220px;
+  height: 5px;
+  background-color: #F9BF3B;
+}
+
+.four-screen-contant-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.four-screen-contant-block--element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.four-screen-contant-block--element-radius {
+  border: 1px solid #B4E2FF;
+  border-radius: 50%;
+  background-color: #B4E2FF;
+}
+
+.four-screen-contant-block--element-img {
+  padding: 20px;
+}
+
